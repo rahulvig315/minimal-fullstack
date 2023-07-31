@@ -1,0 +1,1 @@
+export const getRandomBoolean = () => Number(Math.random().toFixed(2)) < 0.5;
