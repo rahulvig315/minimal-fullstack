@@ -1,0 +1,103 @@
+:root, html {
+    background-color: #222;
+    color: #eee;
+    padding: 0rem;
+    margin: 0rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    background: darkgoldenrod;
+    padding: 8px;   
+
+}
+.content {
+    padding: 16px;
+    margin: 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    width: auto;
+}
+
+/* Todos Input Container */
+#manageDiv, #form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    text-align: center;
+    height: 100%;
+}
+
+button {
+    padding: .4375rem;
+    background-color:rgb(62, 62, 180);
+    border: none;
+    color: #ddd;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    border: .0625rem solid #ccc;
+    margin: .1875rem 0rem;
+    font-weight: bolder;
+    min-width: 70px;
+}
+
+.edit {
+    background-color: darkslategray;
+}
+
+.delete {
+    background-color: #e45;
+}
+
+.inputDiv {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.inputDiv > input, textarea {
+    padding: 0.5rem;
+    resize: none;
+}
+
+
+/* Todos Table Div */
+#todos {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #542;
+}
+
+#todos thead {
+    background: rgb(55, 71, 162);
+}
+
+#todos thead th, #todos tbody tr td {
+    border: 1px solid goldenrod;
+    padding: .3125rem;
+}
+
+
+#todos tbody {
+    background: rgba(97, 97, 97, 0.593);
+}
+
+@media only screen and (max-width: 37.5rem) {
+    .content {
+        grid-template-columns: 100%;
+    }
+}
+
+.editable {
+    background-color: rgb(99, 98, 108);
+}
+
+
+
+

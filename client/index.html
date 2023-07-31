@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="heading">Todos</h1>
+    <div class="content">
+        <form class="form" id="form">
+          <h2>Manage Tasks</h2>
+          <div class="inputDiv">
+            <label for="todo-title"> Title </label>
+            <input id="todo-title" name="todo-title" type="text" placeholder="Add Title..." />
+          </div>
+          <div class="inputDiv">
+            <label for="todo-description">Description </label>
+            <textarea
+              id="todo-description"
+              name="todo-description"
+              type="textarea"
+              placeholder="Add Description..."
+              
+            ></textarea>
+          </div>
+          <button type="submit" id="submit">Add Todo</button>
+        </form>
+
+
+        <table id="todos">
+          <thead>
+            <th>ID</th>
+            <th>Done</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+
+      </div>
+      <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="todoHelper.js"></script>
+    <script type="text/javascript" src="todoApi.js"></script>
+  </body>
+</html>
